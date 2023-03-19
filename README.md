@@ -1,2 +1,2 @@
-# carla_autoware_config
+# carla_autoware_spawn
 Configuration files for carla_autoware_bridge

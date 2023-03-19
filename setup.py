@@ -1,6 +1,8 @@
+import os
 from setuptools import setup
+from glob import glob
 
-package_name = 'carla_autoware_config'
+package_name = 'carla_autoware_spawn'
 
 setup(
     name=package_name,
@@ -12,6 +14,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/config',
              ['config/objects.json']),
+        (os.path.join('share', package_name), glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
