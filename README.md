@@ -1,0 +1,2 @@
+# carla_autoware_config
+Configuration files for carla_autoware_bridge
